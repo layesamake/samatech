@@ -1,17 +1,18 @@
 // components/PortfolioFilters.tsx
-type FilterType = 'application' | 'website' | 'training' | 'automation' | 'all';
+import type { RealisationCategory } from '@/lib/realisations';
+
+type FilterType = RealisationCategory | 'all';
 
 interface Props {
   selectedType: FilterType;
   onSelect: (type: FilterType) => void;
 }
 
-const filters = [
+const filters: { id: FilterType; label: string }[] = [
   { id: 'all', label: 'Tous' },
-  { id: 'application', label: 'Applications' },
   { id: 'website', label: 'Sites Web' },
-  { id: 'training', label: 'Formations' },
-  { id: 'automation', label: 'Automatisations' },
+  { id: 'application', label: 'Applications' },
+  { id: 'saas', label: 'Logiciels SaaS' },
 ];
 
 export default function PortfolioFilters({ selectedType, onSelect }: Props) {
@@ -20,7 +21,9 @@ export default function PortfolioFilters({ selectedType, onSelect }: Props) {
       {filters.map(filter => (
         <button
           key={filter.id}
-          onClick={() => onSelect(filter.id as FilterType)}
+          type="button"
+          aria-pressed={selectedType === filter.id}
+          onClick={() => onSelect(filter.id)}
           className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
             selectedType === filter.id
               ? 'bg-blue-600 text-white'

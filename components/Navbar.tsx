@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Navbar() {
+export default function Navbar({ lang = 'fr' }: { lang?: string }) {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href={`/${lang}`} className="flex items-center gap-2">
           <Image
             src="/logo.png"
             alt="Samatech"
@@ -17,13 +17,16 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex gap-8">
-          <Link href="#services" className="text-gray-600 hover:text-gray-900">
+          <Link href={`/${lang}#services`} className="text-gray-600 hover:text-gray-900">
             Services
           </Link>
-          <Link href="#about" className="text-gray-600 hover:text-gray-900">
-            À propos
+          <Link href={`/${lang}#portfolio`} className="text-gray-600 hover:text-gray-900">
+            Réalisations
           </Link>
-          <Link href="#contact" className="text-gray-600 hover:text-gray-900">
+          <Link href={`/${lang}#clients-map`} className="text-gray-600 hover:text-gray-900">
+            Nos clients
+          </Link>
+          <Link href={`/${lang}#contact`} className="text-gray-600 hover:text-gray-900">
             Contact
           </Link>
         </div>

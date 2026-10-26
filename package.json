@@ -10,18 +10,22 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "verify": "npm run build && echo 'Build successful'"
+    "verify": "npm run build && echo 'Build successful'",
+    "cms:sync": "node scripts/sync-cms-plugin.mjs"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/leaflet": "^1.9.22",
     "@types/node": "^20",
     "@types/nodemailer": "^8.0.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "leaflet": "^1.9.4",
     "next": "16.4.3",
     "nodemailer": "^10.2.1",
     "react": "19.3.0",
     "react-dom": "19.3.0",
+    "react-leaflet": "^5.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

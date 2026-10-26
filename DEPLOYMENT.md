@@ -47,6 +47,25 @@ QUOTE_TO=contact@samatech.cloud  # destinataire des demandes (par défaut : SMTP
 
 Redéployer après avoir ajouté ou modifié ces variables.
 
+#### Réalisations et carte des clients (CMS)
+
+Les fiches projet (`/fr/realisations/<slug>`), la section Réalisations et la carte lisent le CMS WordPress quand `CMS_URL` est défini. Sans CMS, ou s'il ne répond pas, le site utilise `data/realisations.json`.
+
+```
+CMS_URL=https://admin.samatech.cloud     # adresse du WordPress, sans /wp-json
+REVALIDATE_SECRET=********               # clé partagée avec l'extension (mise à jour immédiate)
+```
+
+Mise en place du CMS :
+
+1. Créer le WordPress (par exemple sur `admin.samatech.cloud`) dans Hostinger.
+2. `npm run cms:sync`, puis compresser le dossier `cms/samatech-realisations/` en `samatech-realisations.zip`.
+3. WordPress → Extensions → Ajouter → Téléverser l'archive, puis activer **Samatech — Réalisations**.
+4. Réalisations → Réglages et import : saisir l'adresse du site et la clé (`REVALIDATE_SECRET`), enregistrer, puis cliquer sur **Importer les fiches**.
+5. Ajouter `CMS_URL` et `REVALIDATE_SECRET` dans Hostinger et redéployer.
+
+Ensuite, chaque publication, modification ou dépublication d'une réalisation met le site à jour immédiatement (sans clé : au plus tard après une heure). Pour placer un projet sur la carte, renseigner la latitude et la longitude de la ville dans la fiche.
+
 ### SSL/TLS
 
 Activer HTTPS pour les deux domaines via Let's Encrypt (automatique sur Hostinger).

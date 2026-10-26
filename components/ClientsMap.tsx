@@ -1,41 +1,48 @@
 // components/ClientsMap.tsx
-'use client';
+import Link from 'next/link';
+import { groupByLocation, type Realisation } from '@/lib/realisations';
+import ClientsMapView from './ClientsMapView';
 
-export default function ClientsMap() {
-  // Données des pays des clients (à enrichir)
-  const clientCountries = [
-    { country: 'Sénégal', code: 'SN', count: 15 },
-    { country: 'Maroc', code: 'MA', count: 8 },
-    { country: 'Côte d\'Ivoire', code: 'CI', count: 5 },
-    { country: 'Burkina Faso', code: 'BF', count: 3 },
-    { country: 'Mali', code: 'ML', count: 2 },
-    { country: 'Belgique', code: 'BE', count: 4 },
-    { country: 'France', code: 'FR', count: 6 },
-  ];
+export default function ClientsMap({ realisations, lang }: { realisations: Realisation[]; lang: string }) {
+  const locations = groupByLocation(realisations);
+  const countries = new Set(realisations.map(r => r.countryCode)).size;
 
   return (
     <section id="clients-map" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Nos Clients à Travers le Monde</h2>
-        <p className="text-gray-600 mb-12">Présents dans plusieurs pays d'Afrique et d'Europe</p>
+        <p className="text-gray-600 mb-8">
+          {realisations.length} réalisations dans {countries} pays, de Kafountine à Guangzhou.
+          Cliquez sur un marqueur pour voir les projets de chaque ville.
+        </p>
 
-        {/* Grille des pays */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {clientCountries.map(client => (
-            <div
-              key={client.code}
-              className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 text-center hover:shadow-lg transition"
-            >
-              <div className="text-4xl mb-3">🌐</div>
-              <h3 className="font-bold text-gray-900 mb-1">{client.country}</h3>
-              <p className="text-sm text-blue-600 font-semibold">{client.count} projets</p>
-            </div>
-          ))}
-        </div>
+        <div className="grid lg:grid-cols-[1fr_280px] gap-6">
+          <div className="h-[420px] md:h-[520px] rounded-lg overflow-hidden shadow relative z-0">
+            <ClientsMapView locations={locations} lang={lang} className="h-full w-full" />
+          </div>
 
-        {/* Alternative SVG map (future) */}
-        <div className="mt-12 text-center text-gray-500 text-sm">
-          <p>Carte interactive détaillée à venir 🗺️</p>
+          <ul className="space-y-3 lg:max-h-[520px] lg:overflow-y-auto">
+            {locations.map(location => (
+              <li key={location.key} className="bg-gray-50 rounded-lg p-4">
+                <p className="font-bold text-gray-900">
+                  {location.city}
+                  <span className="font-normal text-gray-500"> · {location.country}</span>
+                </p>
+                <ul className="mt-1 text-sm">
+                  {location.projects.map(project => (
+                    <li key={project.slug}>
+                      <Link
+                        href={`/${lang}/realisations/${project.slug}`}
+                        className="text-blue-600 hover:underline"
+                      >
+                        {project.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

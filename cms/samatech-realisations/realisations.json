@@ -1,0 +1,357 @@
+[
+  {
+    "slug": "diaba-auto",
+    "client": "Diaba Auto",
+    "title": "Plateforme de vente de véhicules Chine – Sénégal",
+    "category": "application",
+    "status": "en-ligne",
+    "url": "https://www.diabaauto.com",
+    "country": "Sénégal",
+    "countryCode": "SN",
+    "city": "Dakar",
+    "lat": 14.6928,
+    "lng": -17.4467,
+    "sector": "Automobile",
+    "summary": "Catalogue en ligne de véhicules neufs et d’occasion situés en Chine ou au Sénégal, avec espace client et back-office commercial.",
+    "description": [
+      "Diaba Auto commercialise des véhicules neufs et d’occasion disponibles en Chine ou au Sénégal. L’entreprise avait besoin d’une vitrine fiable pour présenter son stock, afficher des prix clairs en francs CFA et transformer les visites en demandes concrètes.",
+      "Nous avons conçu une application web complète : un catalogue public avec recherche et filtres, une fiche détaillée par véhicule, un parcours pour commander ou demander un modèle précis, un espace personnel « My Diaba Auto » pour les particuliers et les revendeurs, et un back-office pour l’équipe commerciale.",
+      "Le contact reste direct et rassurant : chaque demande peut se poursuivre sur WhatsApp, et la mesure d’audience n’est activée qu’avec l’accord du visiteur."
+    ],
+    "features": [
+      "Catalogue filtrable par marque, prix, année et kilométrage",
+      "Fiche véhicule avec localisation (Chine ou Sénégal) et prix en XOF",
+      "Demande de véhicule précis et suivi des commandes",
+      "Espace client « My Diaba Auto » (particuliers et revendeurs)",
+      "Back-office de gestion commerciale",
+      "Contact WhatsApp et gestion du consentement aux cookies"
+    ],
+    "technologies": ["Next.js", "TypeScript", "Supabase", "Prisma"],
+    "image": "/realisations/diaba-auto.jpg"
+  },
+  {
+    "slug": "diaba-guide",
+    "client": "Diaba Guide",
+    "title": "Guide d’affaires pour les voyageurs sénégalais en Chine",
+    "category": "application",
+    "status": "en-ligne",
+    "url": "https://www.diabaguide.com",
+    "country": "Chine",
+    "countryCode": "CN",
+    "city": "Guangzhou",
+    "lat": 23.1291,
+    "lng": 113.2644,
+    "sector": "Commerce international",
+    "summary": "Application mobile installable qui réunit les adresses utiles à Guangzhou et Shenzhen et accompagne les expéditions vers le Sénégal.",
+    "description": [
+      "Diaba Guide s’adresse aux commerçants et voyageurs d’affaires sénégalais qui s’approvisionnent en Chine. Sur place, trouver un fournisseur en gros, un hôtel adapté ou un restaurant familier fait gagner un temps précieux.",
+      "Nous avons développé une application web progressive, installable sur téléphone, qui rassemble les adresses professionnelles de Guangzhou et de Shenzhen et aide à suivre les expéditions vers le Sénégal. L’interface est disponible en français, en anglais, en chinois et en arabe.",
+      "Un espace d’administration permet de gérer les annonces, les tarifs et les catégories d’adresses."
+    ],
+    "features": [
+      "Adresses de fournisseurs, hôtels et restaurants à Guangzhou et Shenzhen",
+      "Comptes utilisateurs et accès sécurisé aux adresses",
+      "Suivi des expéditions vers le Sénégal",
+      "Interface en français, anglais, chinois et arabe",
+      "Application installable, utilisable en déplacement",
+      "Administration des annonces, tarifs et catégories"
+    ],
+    "technologies": ["React", "TypeScript", "Vite", "Supabase", "PWA"],
+    "image": "/realisations/diaba-guide.jpg"
+  },
+  {
+    "slug": "diaba-cloud",
+    "client": "Diaba Cloud",
+    "title": "Diaba Gescom, logiciel de gestion commerciale en ligne",
+    "category": "saas",
+    "status": "en-ligne",
+    "url": "https://diaba.cloud",
+    "country": "Sénégal",
+    "countryCode": "SN",
+    "city": "Dakar",
+    "lat": 14.6928,
+    "lng": -17.4467,
+    "sector": "Commerce et PME",
+    "summary": "Logiciel en ligne de ventes, caisse, stock et comptabilité SYSCOHADA pour les commerces et PME du Sénégal, utilisable même sans connexion.",
+    "description": [
+      "Diaba Gescom remplace le cahier de caisse des commerçants et des PME : chaque vente, chaque franc de la caisse et chaque article du stock sont suivis, depuis un téléphone ou un ordinateur.",
+      "Nous avons conçu un logiciel en ligne multi-entreprise, pensé pour les réalités locales : francs CFA, TVA à 18 %, comptabilité SYSCOHADA, factures PDF au logo du commerce, envoi par WhatsApp et fonctionnement hors connexion. L’interface s’appuie sur des images, des couleurs et une voix en langues locales pour rester accessible à tous.",
+      "Les commerçants peuvent l’essayer gratuitement pendant dix jours, sans carte bancaire."
+    ],
+    "features": [
+      "Ventes et caisse en quelques gestes",
+      "Stock multi-dépôts et achats",
+      "Factures PDF au logo et envoi par WhatsApp",
+      "Boutique en ligne intégrée",
+      "Comptabilité SYSCOHADA en francs CFA",
+      "Fonctionnement hors connexion et guidage vocal en langues locales"
+    ],
+    "technologies": ["Laravel", "Vue.js", "PostgreSQL", "Redis", "Docker"],
+    "image": "/realisations/diaba-cloud.jpg"
+  },
+  {
+    "slug": "ccafric",
+    "client": "CCAFRIC — Comptoir des Chargeurs Africains",
+    "title": "Site web bilingue d’un conseiller des chargeurs africains",
+    "category": "website",
+    "status": "en-ligne",
+    "url": "https://www.ccafric.com",
+    "country": "Belgique",
+    "countryCode": "BE",
+    "city": "Anvers",
+    "lat": 51.2466,
+    "lng": 4.4131,
+    "sector": "Transport et logistique",
+    "summary": "Site institutionnel français-anglais d’un acteur basé au port d’Anvers qui conseille, assiste et représente les chargeurs africains.",
+    "description": [
+      "Depuis Anvers, le Comptoir des Chargeurs Africains accompagne les importateurs et exportateurs africains dans leurs expéditions et défend leurs intérêts, notamment en cas de litige.",
+      "Nous avons réalisé un site bilingue qui présente clairement ses expertises (information, suivi des cargaisons, assistance, opportunités de marché) et ses engagements. Les visiteurs accèdent directement aux outils de suivi des grands armateurs et peuvent décrire leur besoin dans un formulaire de demande.",
+      "Les actualités sont rédigées dans WordPress et publiées automatiquement sur le site. Le service BESC renvoie vers IBESC Business, la structure dédiée."
+    ],
+    "features": [
+      "Site bilingue français et anglais",
+      "Présentation des expertises et des sept engagements",
+      "Accès au suivi des transporteurs Maersk, CMA CGM et MSC",
+      "Actualités gérées dans WordPress",
+      "Formulaire de demande d’accompagnement",
+      "Renvoi vers le service BESC d’IBESC Business"
+    ],
+    "technologies": ["Astro", "WordPress (headless)"],
+    "image": "/realisations/ccafric.jpg"
+  },
+  {
+    "slug": "ibesc-business",
+    "client": "IBESC — International BESC Business",
+    "title": "Plateforme de demande de certificats de suivi des cargaisons",
+    "category": "website",
+    "status": "en-ligne",
+    "url": "https://www.ibescbusiness.com",
+    "country": "Belgique",
+    "countryCode": "BE",
+    "city": "Bree",
+    "lat": 51.1407,
+    "lng": 5.5967,
+    "sector": "Transport et logistique",
+    "summary": "Site trilingue qui guide les exportateurs vers le bon certificat (BSC, BESC, ECTN, CTN…) pour 32 destinations africaines et permet d’en faire la demande en ligne.",
+    "description": [
+      "IBESC aide depuis plus de 18 ans les exportateurs à obtenir le certificat de suivi des cargaisons exigé par chaque pays africain, afin d’éviter les pénalités au port.",
+      "Nous avons conçu un site en français, en anglais et en néerlandais, organisé autour d’une question simple : « Où expédiez-vous ? ». Pour chacune des 32 destinations, le visiteur voit le certificat requis et la liste des documents à préparer, puis lance sa demande en quatre étapes.",
+      "L’équipe gère les actualités, les circulaires et les campagnes de newsletter depuis son back-office."
+    ],
+    "features": [
+      "Site en français, anglais et néerlandais",
+      "32 destinations avec certificat requis et documents à fournir",
+      "Demande de certificat en ligne en quatre étapes",
+      "Accès aux outils de suivi des cargaisons",
+      "Actualités et circulaires",
+      "Campagnes de newsletter envoyées via Brevo"
+    ],
+    "technologies": ["Next.js", "WordPress", "Brevo"],
+    "image": "/realisations/ibesc-business.jpg"
+  },
+  {
+    "slug": "groupe-vitos",
+    "client": "Groupe VITO S.",
+    "title": "Site d’un groupe d’enseignement privé à Bamako",
+    "category": "website",
+    "status": "en-ligne",
+    "url": "https://www.groupevitos.com",
+    "country": "Mali",
+    "countryCode": "ML",
+    "city": "Bamako",
+    "lat": 12.6392,
+    "lng": -8.0029,
+    "sector": "Éducation",
+    "summary": "Site du groupe VITO S. (université, lycée et institut technique) : 17 formations, admissions par pôle et demande de plaquette en ligne.",
+    "description": [
+      "Agréé par l’État depuis 2009, le Groupe VITO S. réunit à Bamako une université (DUT, licence, master), un lycée et un institut technique et professionnel.",
+      "Nous avons réalisé un site qui aide chaque futur étudiant à trouver sa voie : catalogue des 17 formations universitaires, conditions d’admission et frais par pôle, inscription en ligne et envoi de la plaquette par e-mail. Une galerie et des espaces dédiés aux parents, étudiants et enseignants complètent l’ensemble.",
+      "L’équipe publie ses contenus dans WordPress ; chaque publication met automatiquement le site à jour."
+    ],
+    "features": [
+      "Présentation des trois pôles : université, lycée, ITP",
+      "Catalogue de 17 formations universitaires",
+      "Admissions, pièces à fournir et frais par pôle",
+      "Inscription en ligne et envoi de la plaquette par e-mail",
+      "Galerie et actualités",
+      "Mise à jour automatique du site à chaque publication"
+    ],
+    "technologies": ["Astro", "WordPress (headless)", "GitHub Actions"],
+    "image": "/realisations/groupe-vitos.jpg"
+  },
+  {
+    "slug": "open-tours-mali",
+    "client": "Open Tours Mali",
+    "title": "Site de location et de vente de véhicules au Mali",
+    "category": "website",
+    "status": "en-ligne",
+    "url": "https://www.opentoursmali.com",
+    "country": "Mali",
+    "countryCode": "ML",
+    "city": "Bamako",
+    "lat": 12.6392,
+    "lng": -8.0029,
+    "sector": "Mobilité et tourisme",
+    "summary": "Site d’Open Tours Mali, loueur de véhicules depuis 2005 : flotte, vente, transport pour les ONG et devis express en ligne ou sur WhatsApp.",
+    "description": [
+      "Créée en 2005, Open Tours Mali loue des véhicules avec ou sans chauffeur, vend des voitures et assure le transport de personnes pour les entreprises, les ONG et les institutions, à Bamako comme dans les régions.",
+      "Nous avons conçu un site centré sur la demande de devis : en quelques choix (louer, acheter, transport d’organisation, type de véhicule, chauffeur), le visiteur envoie sa demande en ligne ou sur WhatsApp. Le site présente aussi la flotte, les deux agences de Bamako et les actualités.",
+      "Le site s’installe comme une application sur le téléphone pour réserver en un geste."
+    ],
+    "features": [
+      "Devis express : location, achat ou transport d’organisation",
+      "Présentation de la flotte (4x4, berlines, minibus, utilitaires)",
+      "Envoi de la demande en ligne ou sur WhatsApp",
+      "Deux agences avec itinéraire",
+      "Actualités gérées dans WordPress",
+      "Application installable sur téléphone"
+    ],
+    "technologies": ["Astro", "WordPress (headless)", "GitHub Actions"],
+    "image": "/realisations/open-tours-mali.jpg"
+  },
+  {
+    "slug": "ecm-pene",
+    "client": "ECM PENE & FILS",
+    "title": "Site d’un fabricant de machines agricoles à Thiès",
+    "category": "website",
+    "status": "en-ligne",
+    "url": "https://ecmpene.com",
+    "country": "Sénégal",
+    "countryCode": "SN",
+    "city": "Thiès",
+    "lat": 14.791,
+    "lng": -16.9359,
+    "sector": "Industrie et agriculture",
+    "summary": "Site bilingue du constructeur mécanique ECM PENE & FILS : catalogue de machines « made in Sénégal », services, réalisations et demande de devis.",
+    "description": [
+      "Depuis 1978, ECM PENE & FILS conçoit et fabrique à Thiès des équipements agricoles et des machines de transformation des céréales et de l’arachide, utilisés dans cinq pays d’Afrique de l’Ouest.",
+      "Nous avons réalisé un site en français et en anglais qui met en valeur ce savoir-faire : catalogue des machines par famille avec fiche et demande de devis, services de chaudronnerie et de charpente métallique, réalisations, formations, actualités et service après-vente. Chaque visiteur joint directement le bon interlocuteur sur WhatsApp.",
+      "L’équipe gère machines, services, formations et réalisations dans un back-office WordPress conçu sur mesure, avec traduction français-anglais intégrée."
+    ],
+    "features": [
+      "Site bilingue français et anglais",
+      "Catalogue de machines par famille avec fiche et devis",
+      "Services, réalisations, formations et blog",
+      "Contact WhatsApp par service (commercial, technique)",
+      "Back-office sur mesure pour machines, services et réalisations",
+      "Vidéo de présentation en page d’accueil"
+    ],
+    "technologies": ["Astro", "WordPress (headless)", "Extension WordPress sur mesure"],
+    "image": "/realisations/ecm-pene.jpg"
+  },
+  {
+    "slug": "ibidun-farming",
+    "client": "IBIDUN FARMING",
+    "title": "Site et boutique d’une entreprise d’élevage au Bénin",
+    "category": "website",
+    "status": "en-ligne",
+    "url": "https://ibidunfarming.com",
+    "country": "Bénin",
+    "countryCode": "BJ",
+    "city": "Porto-Novo",
+    "lat": 6.4969,
+    "lng": 2.6289,
+    "sector": "Agriculture et élevage",
+    "summary": "Site vitrine et boutique en ligne d’IBIDUN FARMING, spécialiste de la cuniculture et de l’élevage en Afrique.",
+    "description": [
+      "Fondée en 2014 au Bénin, IBIDUN FARMING est spécialisée dans l’élevage de lapins et accompagne les éleveurs africains : génétique, cages adaptées aux climats tropicaux, aliments, installation de fermes et formations.",
+      "Nous avons réalisé un site qui présente ses services et sa méthode de travail, avec une boutique en ligne, une page de formation, un blog et une foire aux questions."
+    ],
+    "features": [
+      "Présentation des services d’élevage et d’installation de fermes",
+      "Boutique en ligne avec panier et compte client",
+      "Page de formation (masterclass)",
+      "Blog et foire aux questions"
+    ],
+    "technologies": ["WordPress", "WooCommerce"],
+    "image": null
+  },
+  {
+    "slug": "commune-kafountine",
+    "client": "Commune de Kafountine",
+    "title": "Portail citoyen de la Commune de Kafountine",
+    "category": "website",
+    "status": "en-ligne",
+    "url": "https://communekafountine.sn",
+    "country": "Sénégal",
+    "countryCode": "SN",
+    "city": "Kafountine",
+    "lat": 12.9264,
+    "lng": -16.7464,
+    "sector": "Collectivité territoriale",
+    "summary": "Site officiel de la commune : mot du maire, 19 villages, vie économique, services de la mairie et démarches en ligne.",
+    "description": [
+      "La Commune de Kafountine, en Casamance, souhaitait rapprocher la mairie de ses habitants et rendre l’action municipale plus lisible.",
+      "Nous avons conçu son portail citoyen : présentation des 19 villages par zone, pêche, activités économiques, tourisme et culture, pages de la mairie (élus, conseil municipal, budget, projets et travaux, état civil, services publics) et actualités.",
+      "Des actions rapides permettent aux habitants de faire leurs démarches, de signaler un problème, de proposer ou soutenir un projet et de consulter les offres d’emploi."
+    ],
+    "features": [
+      "Présentation des 19 villages par zone",
+      "Pages de la mairie : élus, conseil, budget, projets, état civil",
+      "Démarches en ligne et signalement de problèmes",
+      "Proposer ou soutenir un projet",
+      "Emplois et opportunités",
+      "Formulaire de contact de la mairie"
+    ],
+    "technologies": ["WordPress", "Elementor", "ACF"],
+    "image": "/realisations/commune-kafountine.jpg"
+  },
+  {
+    "slug": "kafountine-360",
+    "client": "Commune de Kafountine",
+    "title": "Kafountine 360°, la plateforme du territoire",
+    "category": "application",
+    "status": "version-de-travail",
+    "url": "https://dev.kafountine360.com",
+    "country": "Sénégal",
+    "countryCode": "SN",
+    "city": "Kafountine",
+    "lat": 12.9264,
+    "lng": -16.7464,
+    "sector": "Tourisme et développement local",
+    "summary": "Plateforme territoriale installable pour découvrir les 19 villages de Kafountine, leurs acteurs, l’agenda et les opportunités d’investissement.",
+    "description": [
+      "Kafountine 360° fait découvrir le territoire de la commune, entre océan, bolongs et mangrove : ses 19 villages, ses acteurs économiques, ses rendez-vous et ses projets.",
+      "Nous avons développé une plateforme installable sur téléphone, consultable hors connexion, avec annuaire des acteurs locaux, agenda, rubriques économie et investissement, recherche et favoris. Un espace contributeur permet de documenter les villages au fil du temps.",
+      "La plateforme est en ligne dans sa version de travail ; les contenus sont en cours de documentation."
+    ],
+    "features": [
+      "Fiches des 19 villages",
+      "Annuaire des acteurs locaux et agenda",
+      "Rubriques économie, découvertes et opportunités",
+      "Recherche et villages enregistrés",
+      "Application installable, consultable hors connexion",
+      "Espace contributeur pour enrichir les contenus"
+    ],
+    "technologies": ["Astro", "WordPress (headless)", "PWA"],
+    "image": "/realisations/kafountine-360.jpg"
+  },
+  {
+    "slug": "kafountine-saas-municipal",
+    "client": "Commune de Kafountine",
+    "title": "Plateforme de gestion municipale (SaaS)",
+    "category": "saas",
+    "status": "en-cours",
+    "url": null,
+    "country": "Sénégal",
+    "countryCode": "SN",
+    "city": "Kafountine",
+    "lat": 12.9264,
+    "lng": -16.7464,
+    "sector": "Collectivité territoriale",
+    "summary": "Application d’administration de la mairie pour traiter les démarches et les demandes des citoyens, reliée au portail communal. En cours de réalisation.",
+    "description": [
+      "Pour compléter le portail citoyen, la Commune de Kafountine se dote d’une application de gestion destinée aux services de la mairie.",
+      "Elle centralisera le traitement des démarches, des signalements et des demandes déposés par les habitants, avec une API qui alimente les autres outils numériques de la commune.",
+      "Le projet est en cours de réalisation et n’est pas encore livré."
+    ],
+    "features": [
+      "Traitement des démarches et des demandes citoyennes",
+      "Suivi des signalements",
+      "API reliée au portail communal",
+      "Hébergement sécurisé et sauvegardes"
+    ],
+    "technologies": ["Node.js", "PostgreSQL", "Docker"],
+    "image": null
+  }
+]
