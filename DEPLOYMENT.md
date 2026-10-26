@@ -33,6 +33,20 @@ NEXT_PUBLIC_APP_URL=https://samatech.cloud
 NODE_ENV=production
 ```
 
+#### Formulaires de devis et de contact
+
+Les deux formulaires envoient un e-mail via `/api/quote` (SMTP Hostinger). Sans `SMTP_USER` et `SMTP_PASS`, le visiteur voit un message d'erreur et rien n'est envoyé.
+
+```
+SMTP_HOST=smtp.hostinger.com
+SMTP_PORT=465
+SMTP_USER=devis@samatech.cloud   # boîte mail Hostinger qui envoie
+SMTP_PASS=********               # mot de passe de cette boîte
+QUOTE_TO=contact@samatech.cloud  # destinataire des demandes (par défaut : SMTP_USER)
+```
+
+Redéployer après avoir ajouté ou modifié ces variables.
+
 ### SSL/TLS
 
 Activer HTTPS pour les deux domaines via Let's Encrypt (automatique sur Hostinger).

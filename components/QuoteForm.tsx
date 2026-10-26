@@ -2,19 +2,24 @@
 'use client';
 
 import { useState } from 'react';
+import { sendForm } from '@/lib/sendForm';
 
 export default function QuoteForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
+    setError('');
 
-    // Simuler l'envoi (à connecter à une API)
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    setSubmitted(true);
+    const sendError = await sendForm(e.currentTarget);
+    if (sendError) {
+      setError(sendError);
+    } else {
+      setSubmitted(true);
+    }
     setIsLoading(false);
   };
 
@@ -32,6 +37,12 @@ export default function QuoteForm() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Piège à robots : invisible pour les visiteurs */}
+            <div className="hidden" aria-hidden="true">
+              <label htmlFor="website">Site web</label>
+              <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+            </div>
+
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-1">
                 Nom complet *
@@ -105,6 +116,12 @@ export default function QuoteForm() {
                 placeholder="Décrivez votre projet, vos besoins, votre budget..."
               />
             </div>
+
+            {error && (
+              <p role="alert" className="bg-red-50 text-red-700 rounded px-4 py-3 text-sm">
+                {error}
+              </p>
+            )}
 
             <button
               type="submit"
