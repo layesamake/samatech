@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Samatech — Réalisations
- * Description: Gère les réalisations (portfolio) affichées sur samatech.cloud : fiches projet, localisation pour la carte des clients, import initial et mise à jour immédiate du site.
+ * Description: Gère les réalisations (portfolio) affichées sur samatech.cloud : fiches projet, localisation pour la carte des clients, import initial, mise à jour immédiate du site et favicon Samatech pour le CMS.
  * Version: 1.0.0
  * Requires at least: 6.4
  * Requires PHP: 8.0
@@ -33,6 +33,22 @@ function samatech_real_fields(): array {
 		'technologies' => ['label' => 'Technologies', 'type' => 'string', 'help' => 'Séparées par des virgules.'],
 	];
 }
+
+/* -------------------------------------------------------------------------
+ * Favicon Samatech pour le CMS (administration, connexion et site)
+ * ---------------------------------------------------------------------- */
+
+// WordPress affiche l'icône du site dans wp_head, admin_head et login_head :
+// on lui fournit les icônes du kit Samatech, à la taille demandée.
+add_filter('get_site_icon_url', function ($url, $size) {
+	$file = match (true) {
+		$size <= 32  => 'favicon-32x32.png',
+		$size <= 180 => 'apple-touch-icon.png',
+		$size <= 192 => 'icon-192.png',
+		default      => 'icon-512.png',
+	};
+	return plugins_url('assets/' . $file, __FILE__);
+}, 10, 2);
 
 /* -------------------------------------------------------------------------
  * Type de contenu et champs
